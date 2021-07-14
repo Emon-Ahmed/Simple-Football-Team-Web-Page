@@ -1,0 +1,47 @@
+@media only screen and (max-width: 1200px){
+    .header-container, .container{
+        width: 90%;
+    }
+    .players{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .nav-bar-icon{
+        display: block;
+    }
+    .nav-item{
+        display: none;
+    }
+    .main-header, .highlight{
+        grid-template-columns: 1fr 2fr;
+    }
+
+
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .main-header, .highlight{
+        grid-template-columns: 1fr;
+
+    }
+    .highlight-banner{
+        padding-top: 48px;
+    } 
+    .players{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-heading h1{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .header-heading{
+        margin-top:100px;
+    }
+}
