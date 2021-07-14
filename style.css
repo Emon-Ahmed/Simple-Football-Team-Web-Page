@@ -52,7 +52,6 @@
     margin:0 10px;
 }
 /* Navbar Style End */
-
 header{
     height: 667px;
     background-color: #2D25A0;
@@ -89,6 +88,11 @@ header{
 .header-img{
     width: 50%;
     margin-top: 50px;
+    transition-duration: 1s;
+}
+.header-img:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
 }
 .header-img img{
     width: 556.01px;
