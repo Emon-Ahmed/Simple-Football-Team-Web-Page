@@ -106,7 +106,7 @@ header{
 /* Players Section Style Start  */
 .players{
     margin-top: 70px;
-    margin-bottom: 165px;
+    margin-bottom: 120px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30%, 3fr));
     grid-gap: 30px;
@@ -134,17 +134,60 @@ header{
     width: 100%;
 }
 
+/* Matches Section Style Start */
+.matches-section{
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-color: #e3e3e3;
+    margin-bottom: 65px;
+}
+.all-matches{
+    display: flex;
+    justify-content: space-around;
+}
+
+.matches{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 15px 15px;
+    background-color: white ;
+    text-align: center;
+    margin-right: 15px;
+}
+.matches img{
+    width: 64px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.matches h1{
+    text-align: left;
+    font-size: 1.2em;
+}
+.matches h2{
+    font-size: 45px;
+    font-weight: 500;
+}
+.matches-title{
+    line-height: 2;
+    padding: 0;
+    margin: 0;
+}
+
 /* Highlight Section Style Start  */
 .highlight{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 158px;
+}
+.highlight-section{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin-bottom: 75px;
 }
 .highlight-banner img{
     width: 100%
 }
 .highlight-content{
-
     padding-right: 56px;
     margin: auto;
 }
@@ -207,6 +250,12 @@ header{
     }
     .main-header, .highlight{
         grid-template-columns: 1fr 2fr;
+    }
+    .all-matches{
+        flex-direction: column;
+    }
+    .matches{
+        margin: 10px;
     }
 }
 @media only screen and (max-width: 768px) {
